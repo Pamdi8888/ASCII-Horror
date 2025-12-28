@@ -17,10 +17,14 @@ class Player:
         speed_cos = speed * cos_a
 
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_w]:
+        # if keys[pygame.K_w]:
+        # change to up arrow
+        if keys[pygame.K_UP]:
             dx += speed_cos
             dy += speed_sin
-        if keys[pygame.K_s]:
+        # if keys[pygame.K_s]:
+        # change to down arrow
+        if keys[pygame.K_DOWN]:
             dx += -speed_cos
             dy += -speed_sin
         if keys[pygame.K_a]:
